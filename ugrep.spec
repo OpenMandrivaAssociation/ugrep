@@ -1,6 +1,6 @@
 %define name	ugrep
 %define version 1.7
-%define release 4mdk
+%define release %mkrel 4
 
 Summary:	Barebones version of grep/egrep
 Name:		%{name}
