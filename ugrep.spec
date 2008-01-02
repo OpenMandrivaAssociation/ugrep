@@ -13,6 +13,7 @@ Source0:	%{name}.tar.bz2
 Patch0:		%{name}-Makefile.patch
 BuildRequires:	dietlibc-devel >= 0.20-1mdk
 Prefix:		%{_libdir}/embutils
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 %{name} will only do basic regexp string matching.
