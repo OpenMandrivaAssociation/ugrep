@@ -1,19 +1,15 @@
-%define name	ugrep
-%define version 1.7
-%define release %mkrel 5
-
 Summary:	Barebones version of grep/egrep
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		ugrep
+Version:	1.7
+Release:	%mkrel 6
 License:	GPL
 Group:		File tools
 URL:		http://robur.slu.se/jensl/ugrep/
 Source0:	%{name}.tar.bz2
 Patch0:		%{name}-Makefile.patch
-BuildRequires:	dietlibc-devel >= 0.20-1mdk
+BuildRequires:	dietlibc-devel >= 0.32
 Prefix:		%{_libdir}/embutils
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 %{name} will only do basic regexp string matching.
@@ -31,7 +27,7 @@ echo "#define VERSION \"Version: %{version}\"" > version.h
 make
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 install -d %{buildroot}%{prefix}/bin
 install -m755 %{name} %{buildroot}%{prefix}/bin/
@@ -40,10 +36,9 @@ install -m755 %{name} %{buildroot}%{prefix}/bin/
 ln -snf %{name} %{buildroot}%{prefix}/bin/grep
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
 %{prefix}/bin/%{name}
 %{prefix}/bin/grep
-
