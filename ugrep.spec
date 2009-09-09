@@ -1,7 +1,7 @@
 Summary:	Barebones version of grep/egrep
 Name:		ugrep
 Version:	1.7
-Release:	%mkrel 7
+Release:	%mkrel 8
 License:	GPL
 Group:		File tools
 URL:		http://robur.slu.se/jensl/ugrep/
