@@ -42,3 +42,42 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{prefix}/bin/%{name}
 %{prefix}/bin/grep
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 1.7-8mdv2010.0
++ Revision: 434498
+- rebuild
+
+* Fri Aug 08 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.7-7mdv2009.0
++ Revision: 269446
+- rebuild early 2009.0 package (before pixel changes)
+
+* Tue Jun 10 2008 Oden Eriksson <oeriksson@mandriva.com> 1.7-6mdv2009.0
++ Revision: 217548
+- rebuilt against dietlibc-devel-0.32
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 1.7-5mdv2008.1
++ Revision: 140924
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Aug 23 2007 Thierry Vignaud <tvignaud@mandriva.com> 1.7-5mdv2008.0
++ Revision: 69934
+- use %%mkrel
+
+
+* Fri Jun 03 2005 Oden Eriksson <oeriksson@mandriva.com> 1.7-4mdk
+- rebuild
+
+* Sun May 16 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 1.7-3mdk
+- build release
+
+* Mon Apr 07 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.7-2mdk
+- argh!!! fix buildrequires
+
+* Sat Apr 05 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 1.7-1mdk
+- initial cooker contribs
+
