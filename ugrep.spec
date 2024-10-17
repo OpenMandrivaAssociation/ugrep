@@ -4,7 +4,7 @@ Version:	1.7
 Release:	9
 License:	GPL
 Group:		File tools
-URL:		http://robur.slu.se/jensl/ugrep/
+URL:		https://robur.slu.se/jensl/ugrep/
 Source0:	%{name}.tar.bz2
 Patch0:		%{name}-Makefile.patch
 BuildRequires:	dietlibc-devel >= 0.32
