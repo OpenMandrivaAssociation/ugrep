@@ -7,6 +7,7 @@ Group:		File tools
 URL:		https://robur.slu.se/jensl/ugrep/
 Source0:	%{name}.tar.bz2
 Patch0:		%{name}-Makefile.patch
+BuildRequires:	make
 BuildRequires:	dietlibc-devel >= 0.32
 Prefix:		%{_libdir}/embutils
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
