@@ -1,7 +1,7 @@
 Summary:	Barebones version of grep/egrep
 Name:		ugrep
-Version:	1.7
-Release:	9
+Version:	7.8.3
+Release:	1
 License:	GPL
 Group:		File tools
 URL:		https://robur.slu.se/jensl/ugrep/
@@ -18,7 +18,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 %prep
 
 %setup -q -n %{name}
-%patch0 -p0
+%patch -P0 -p0
 
 # fix version
 echo "#define VERSION \"Version: %{version}\"" > version.h
